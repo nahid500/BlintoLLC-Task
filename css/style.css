@@ -1,0 +1,261 @@
+*{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin: 0;
+}
+
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin: 0 3px; */
+    padding: 1rem;
+}
+
+.hero{
+    background: linear-gradient(to bottom, #ffffff ,#8c8def);
+    width: 100%;
+}
+
+.hero-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-tagline{
+    display: inline-block;
+    background-color:#EEF2FF ;
+    color: #4F46E5;
+    margin-top: 4rem;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius:2rem;
+
+
+}
+
+.hero-title{
+    text-align: center;
+    font-weight: 800;
+    font-size: 36px;
+    padding: 0 2rem;
+    margin-top: 2rem;
+}
+
+.hero-description{
+    text-align: center;
+    padding: 0 3rem;
+    color: #475569;
+    margin-top: 1rem;
+}
+
+.hero-stores{
+    margin: 2rem;
+}
+
+.hero-mid{
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    align-items: center;
+    width: fit-content;
+}
+.heroImg1{
+    position:relative;
+    z-index: 1;
+    align-items: center;
+    /* margin-top: 20rem */
+}
+
+.heroImg2{
+    position:;
+    /* top: 10%; */
+}
+
+/* Companies */
+
+.companies{
+    background-color: #F8FAFC;
+}
+
+.company-images{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem;
+    
+}
+
+.company-images img{
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 469px) and (max-width:768px){
+    .company-images{
+        grid-template-columns: repeat(4, 1fr);
+        padding: 2rem 3rem;
+    }
+}
+
+@media (min-width: 769px){
+    .company-images{
+        grid-template-columns: repeat(6, 1fr);
+        padding: 2rem 6rem;
+    }
+}
+
+/* Features Section */
+
+.feature{
+    width: 100%;
+    padding: 2rem 2rem;
+    margin-top: 2rem
+}
+
+.f-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.f-title{
+
+    text-align: center;
+    font-weight: 800;
+    font-size:medium;
+    width: 343px;
+    /* padding: 0 1rem; */
+    margin-top: 2rem;
+}
+.f-description{
+    max-width: 600px;
+    margin-top: 1rem;
+}
+
+.f-bottom{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.f-detail{
+    text-align: center;
+    
+}
+
+.f-d-img{
+    width: 64px;
+    height: 64px;
+    margin-bottom: 1rem;
+}
+
+.f-d-desc{
+    font-size: 1rem;
+    color: #475569;
+    padding: 1rem;
+}
+
+@media (min-width: 469px) and (max-width:768px){
+    .f-bottom{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 3rem;
+
+    }
+}
+
+@media (min-width: 769px){
+    .f-bottom{
+        grid-template-columns: repeat(3, 1fr);
+        padding: 6rem;
+
+    }
+}
+
+/* Results Section */
+
+.results{
+    background: #F8FAFC;
+    margin-top: 2rem;
+    padding: 2rem
+}
+
+.r-top{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.r-top img{
+    display: inline-block;
+    background-color:#EEF2FF;
+    padding: 0.5rem;
+    border-radius: 2rem;
+}
+
+.r-title{
+    margin: 1rem;
+}
+
+
+.r-desc{
+    margin-bottom: 3rem;
+    color: #475569;
+    max-width: 600px;
+
+}
+
+.r-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.r-type{
+    margin: 1rem;
+    border-bottom: 1px solid #CBD5E1;
+    
+}
+.r-type:last-child {
+    border-bottom: none;
+}
+
+.r-t-title{
+    color: #4F46E5;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.r-t-desc{
+    color: #475569;
+    margin: 3rem;
+}
+
+
+@media (min-width: 768px){
+    .r-bottom{
+        flex-direction: row;
+        justify-content: center;
+        border: none;
+    }
+    .r-type{
+        border-bottom: none;
+        border-right: 1px solid #CBD5E1;
+        padding-right: 1rem;
+    }
+    .r-type:last-child {
+        border-right: none;
+    }
+    
+
+}
